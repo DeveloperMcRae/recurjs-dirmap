@@ -1,0 +1,30 @@
+{
+  "name": "recurjs-dirmap",
+  "version": "1.0.0",
+  "description": "Directory mapper for Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./tester.js",
+    "devstart": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeveloperMcRae/recurjs-dirmap.git"
+  },
+  "keywords": [
+    "nodejs",
+    "recursion",
+    "filesystem",
+    "directory",
+    "mapper"
+  ],
+  "author": "McRae Dev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DeveloperMcRae/recurjs-dirmap/issues"
+  },
+  "homepage": "https://github.com/DeveloperMcRae/recurjs-dirmap#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
