@@ -1,4 +1,5 @@
 {
-  "DM" : "directorymapper.js",
-  "D" : "drive.js"
+  "DM" : "/directorymapper.js",
+  "S" : "/storage.js",
+  "D" : "/drive.js"
 }
