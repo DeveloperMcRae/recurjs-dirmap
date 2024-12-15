@@ -1,30 +1,33 @@
 const DIRECTORYMAP = class
 {
-  FILESYSTEM = []
-  error = []
+  STORAGE = []
   count = 0
 
   #dir = __dirname
+
   #config
-  #DriveClass
+  #StorageClass
 
   constructor ()
   {
     this.#config = require (`${this.#dir}/config.json`)
 
-    this.#DriveClass = require (`${this.#dir}/${this.#config.D}`)
+    this.#StorageClass = require (`${this.#dir}${this.#config.S}`)
   }
 
-  map (path)
+  setStorage (name)
   {
-    if (path)
+    if (name)
     {
+      const count = this.count
+      this.STORAGE[count] = {}
+      this.STORAGE[count][name] = new this.#StorageClass ()
       this.count ++
-      return this.FILESYSTEM.push (new this.#DriveClass (path))
+      return this.STORAGE[count]
     }
     else
     {
-      this.error 
+      //error
     }
   }
 }
