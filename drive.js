@@ -2,9 +2,9 @@ const DRIVE = class
 {
   #path
 
-  constructor (props)
+  constructor (path)
   {
-    this.#path = props.path
+    this.path = path
     
   }
 }
