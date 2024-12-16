@@ -8,8 +8,12 @@ module.exports = DM
 
 const dm = new DM ()
 
-const system = dm.setStorage ("_SYSTEM")
-const root = dm.setStorage ("_ROOT")
+dm.setStorage ("_SYSTEM")
+dm.setStorage ("_ROOT")
+
+dm.setDrive ("_SYSTEM", "core", dir)
+dm.setDrive ("_SYSTEM", "shell", `${dir}/package.json`)
+dm.setDrive ("_ROOT", "app", `${dir}/index.js`)
 
 //log
-console.log (dm)
+console.dir (dm, {depth : 10})

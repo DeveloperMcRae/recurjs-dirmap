@@ -23,11 +23,42 @@ const DIRECTORYMAP = class
       this.STORAGE[count] = {}
       this.STORAGE[count][name] = new this.#StorageClass ()
       this.count ++
-      return this.STORAGE[count]
+      return this.STORAGE[count][name]
     }
     else
     {
       //error
+    }
+  }
+  setDrive (storageName, driveName, path)
+  {
+    for (let x in this.STORAGE)
+    {
+      if (storageName)
+      {
+        for (let y in this.STORAGE[x])
+        {
+          if (y === storageName)
+          {
+            if (driveName && path)
+            {
+              this.STORAGE[x][y].setDrive (driveName, path)
+            }
+            else
+            {
+              
+            }
+          }
+          else
+          {
+          
+          }
+        }
+      }
+      else
+      {
+        //error
+      }
     }
   }
 }
