@@ -1,7 +1,7 @@
 const DIRECTORYMAP = class
 {
   STORAGE = []
-  count = 0
+  storageCount = 0
 
   #dir = __dirname
 
@@ -19,11 +19,10 @@ const DIRECTORYMAP = class
   {
     if (name)
     {
-      const count = this.count
+      const count = this.storageCount
       this.STORAGE[count] = {}
       this.STORAGE[count][name] = new this.#StorageClass ()
-      this.count ++
-      return this.STORAGE[count][name]
+      this.storageCount ++
     }
     else
     {
@@ -46,12 +45,12 @@ const DIRECTORYMAP = class
             }
             else
             {
-              
+              //error
             }
           }
           else
           {
-          
+            //error
           }
         }
       }

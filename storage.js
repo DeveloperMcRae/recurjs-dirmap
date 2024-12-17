@@ -1,7 +1,7 @@
 const STORAGE = class
 {
   DRIVE = []
-  count = 0
+  driveCount = 0
 
   #dir = __dirname
 
@@ -19,12 +19,11 @@ const STORAGE = class
   {
     if (driveName)
     {
-      const count = this.count
+      const count = this.driveCount
       this.DRIVE[count] = {}
       this.DRIVE[count][driveName] = new this.#DriveClass (path)
       
-      this.count ++
-      return this.DRIVE[count][driveName]
+      this.driveCount ++
     }
     else
     {
