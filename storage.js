@@ -24,7 +24,6 @@ const STORAGE = class
       this.DRIVE[count][driveName] = new this.#DriveClass (path)
       
       this.driveCount ++
-      return this.DRIVE[count][driveName]
     }
     else
     {

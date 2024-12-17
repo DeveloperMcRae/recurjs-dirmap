@@ -23,7 +23,6 @@ const DIRECTORYMAP = class
       this.STORAGE[count] = {}
       this.STORAGE[count][name] = new this.#StorageClass ()
       this.storageCount ++
-      return this.STORAGE[count][name]
     }
     else
     {
@@ -46,12 +45,12 @@ const DIRECTORYMAP = class
             }
             else
             {
-              
+              //error
             }
           }
           else
           {
-          
+            //error
           }
         }
       }
