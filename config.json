@@ -1,5 +1,8 @@
 {
   "DM" : "/directorymapper.js",
   "S" : "/storage.js",
-  "D" : "/drive.js"
+  "D" : "/drive.js",
+  "C" : "/container.js",
+  "DF" : "/data.js",
+  "SF" : "/script.js"
 }
