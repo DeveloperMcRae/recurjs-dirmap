@@ -4,7 +4,6 @@
   "description": "Directory mapper for Node.js",
   "main": "index.js",
   "scripts": {
-    "test": "node ./tester.js",
     "devstart": "nodemon"
   },
   "repository": {

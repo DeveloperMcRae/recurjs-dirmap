@@ -30,9 +30,5 @@ const STORAGE = class
       //error
     }
   }
-  test (num)
-  {
-    console.log (num)
-  }
 }
 module.exports = STORAGE
