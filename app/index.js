@@ -12,9 +12,4 @@ dm.setStorage ("_SYSTEM")
 dm.setStorage ("_ROOT")
 
 dm.setDrive ("_SYSTEM", "core", dir)
-dm.setDrive ("_SYSTEM", "shell", `${dir}/package.json`)
-dm.setDrive ("_ROOT", "app", `${dir}/tester.js`)
-
-//log
-console.dir (dm, {depth : 10})
-
+dm.setDrive ("_ROOT", "app", `${dir}/index.js`)
