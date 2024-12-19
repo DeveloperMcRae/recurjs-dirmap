@@ -24,6 +24,9 @@ const STORAGE = class
       this.DRIVE[count][driveName] = new this.#DriveClass (path)
       
       this.driveCount ++
+      
+      let cnt = 1
+      this.DRIVE[count][driveName].observer (this, cnt)
     }
     else
     {

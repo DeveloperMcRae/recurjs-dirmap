@@ -2,9 +2,10 @@
   "name": "recurjs-dirmap",
   "version": "1.0.0",
   "description": "Directory mapper for Node.js",
-  "main": "index.js",
+  "main": "app/index.js",
   "scripts": {
-    "devstart": "nodemon"
+    "devstart": "nodemon",
+    "start": "node app/index.js"
   },
   "repository": {
     "type": "git",
